@@ -1,0 +1,290 @@
+body {
+    overflow-x: hidden  ;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.hero {
+    opacity: 0;
+    transition: opacity 2s ease-in;
+}
+
+.hero.fade-in {
+    opacity: 1;
+}
+
+.bg {
+    position: relative;
+}
+
+.bg img {
+    height: 100%;
+    width: 100%;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+}
+
+.text-hero {
+    width: max(75%, 1000px);
+    color: white;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#typewriter {
+    font-family: 'Balsamiq Sans';
+    font-size: 3rem;
+    font-weight: 800;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+#section2 {
+    position: relative;
+    background-color: aliceblue;
+    height: auto;
+}
+
+#section3 {
+    background-color: brown;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+#section4 {
+    background-color: brown;
+    height: 500px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#section5 {
+    background-color: aliceblue;
+    height: 500px;
+}
+
+#section6 {
+    background-color: aliceblue;
+    height: 500px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-right: 3px solid brown;
+}
+
+.left img {
+    width: 50%;
+    height: 100%;
+}
+
+.left-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.left-2 p {
+    font-family: 'Noto Sans JP';
+    font-size: 48px;
+    font-weight: bolder;
+    color: white;
+    text-align: right;
+    margin-right: 3rem;
+}
+
+.left-2 span {
+    font-family: 'Catamaran';
+    font-size: 44px;
+    color: white;
+    text-align: right;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.right p {
+    font-family: 'Balsamiq Sans';
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-align: center;
+}
+
+.right span {
+    color: rgb(255, 69, 69);
+}
+
+.right-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.spotify {
+    border-radius: 12px;
+}
+
+.slide-up {
+    opacity: 0;
+}
+
+.slide-up.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+#section4 .container {
+    position: relative;
+    align-items: center;
+}
+
+#section4 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section4 .group-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-family: 'Balsamiq Sans';
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+#section4 .card {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    margin: 0 10px;
+}
+
+#section4 .card-header {
+    background-color: red;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    text-align: center;
+}
+
+#section4 .card-body {
+    height: auto;
+}
+
+#section4 .card-body p {
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.left-3 {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.left-3 h1 {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Balsamiq Sans';
+    font-size: 45px;
+    font-weight: bold;
+    color: black;
+    transform: translateY(-50%);
+}
+
+.left-3 span {
+    font-style: italic;
+}
+
+.right-4 button {
+    width: 300px;
+    height: 38px;
+}
+
+.left-4 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.left-4 .form-label,
+.right-4 h1 {
+    font-family: 'Balsamiq Sans';
+    font-size: 20px;
+}
+
+footer .container {
+    padding-top: 1rem;
+    font-family: 'Balsamiq Sans';
+    font-size: 18px;
+}
+
+footer span {
+    color: red;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white
+    }
+}
